@@ -95,8 +95,9 @@ From: rockylinux/rockylinux:8.5
     #pip${PYTHON_VERSION} install click-completion
 
     yum -y install python3-psycopg2 python3-sqlalchemy python3-dateutil python3-click
- 
-    alternatives --set python /usr/bin/python3
+    
+    # Dunno what this is, but it fails.
+    alternatives --set python /usr/bin/python3 || 0 
     
     # Experimental below here
     set +e
