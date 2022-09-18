@@ -97,7 +97,7 @@ From: rockylinux/rockylinux:8.5
     yum -y install python3-psycopg2 python3-sqlalchemy python3-dateutil python3-click
     
     # Dunno what this is, but it fails.
-    alternatives --set python /usr/bin/python3 || 0 
+    # alternatives --set python /usr/bin/python3 || 0 
     
     # Experimental below here
     set +e
